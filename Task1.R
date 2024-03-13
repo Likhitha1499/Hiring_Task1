@@ -51,8 +51,8 @@ new_gmt_sample <- readLines(output_gmt_path, n = 5) # read first 5 lines
 original_gmt_sample
 new_gmt_sample
 
-# write a quick check for whether all symbols in a sample of the new GMT file
-# are in the symbol_to_geneid mapping (they should be replaced by GeneID)
+# A quick check for whether all symbols are in a sample of the new GMT file
+# symbol_to_geneid mapping
 all(sapply(strsplit(new_gmt_sample, "\t"), function(line) {
   # Skip the first two elements which are pathway name and description
   all(line[-c(1, 2)] %in% symbol_to_geneid)
