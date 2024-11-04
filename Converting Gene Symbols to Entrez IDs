@@ -1,4 +1,4 @@
-# Hiring_Task1
+# Converting Gene Symbols to Entrez IDs in a GMT File Using R
 #Load libraries
 library(data.table)
 
